@@ -2,7 +2,7 @@
     package="tech.virusz4274.whatsapp_contact_nosave">
     <uses-permission android:name="android.permission.INTERNET"/> <!-- Add this -->
    <application
-        android:label="whatsapp_contact_nosave"
+        android:label="Whatsapp nosave chat"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

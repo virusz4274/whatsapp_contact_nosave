@@ -27,9 +27,10 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
           scaffoldBackgroundColor: Colors.grey[900],
-          textTheme: TextTheme(bodyText1: TextStyle(), bodyText2: TextStyle())
-              .apply(bodyColor: Colors.white, displayColor: Colors.blue)),
-      home: MainPage(),
+          textTheme:
+              const TextTheme(bodyText1: TextStyle(), bodyText2: TextStyle())
+                  .apply(bodyColor: Colors.white, displayColor: Colors.blue)),
+      home: const MainPage(),
     );
   }
 }
@@ -65,16 +66,16 @@ class _MainPageState extends State<MainPage> {
                   height: 200,
                   width: 200,
                   fit: BoxFit.fill),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Center(
+              const Center(
                 child: Text(
                   'Ever Wanted to message someone in Whatsapp without saving their number? Well you could just do it here!',
                   textAlign: TextAlign.center,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               GlassContainer(
@@ -86,12 +87,12 @@ class _MainPageState extends State<MainPage> {
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Color.fromARGB(255, 255, 255, 255).withOpacity(0.3),
-                    Color.fromARGB(255, 255, 255, 255).withOpacity(0.4),
+                    const Color.fromARGB(255, 255, 255, 255).withOpacity(0.3),
+                    const Color.fromARGB(255, 255, 255, 255).withOpacity(0.4),
                   ],
                 ),
                 //--code to remove border
-                border: Border.fromBorderSide(BorderSide.none),
+                border: const Border.fromBorderSide(BorderSide.none),
                 shadowStrength: 5,
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.circular(16),
@@ -99,17 +100,17 @@ class _MainPageState extends State<MainPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 20),
                       child: Text(
                         'Enter the number with its country code you want to reach in Whatsapp.',
                         textAlign: TextAlign.center,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     SizedBox(
@@ -119,36 +120,37 @@ class _MainPageState extends State<MainPage> {
                         controller: myController,
                         textAlign: TextAlign.center,
                         decoration: InputDecoration(
-                            contentPadding: EdgeInsets.only(bottom: 35 / 2),
+                            contentPadding:
+                                const EdgeInsets.only(bottom: 35 / 2),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             filled: true,
-                            hintStyle:
-                                TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                            hintStyle: const TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0)),
                             hintText: 'eg. 91 9876543210',
-                            fillColor: Color.fromARGB(255, 255, 255, 255)),
+                            fillColor:
+                                const Color.fromARGB(255, 255, 255, 255)),
                       ),
                     ),
                     ElevatedButton(
                         onPressed: () async {
-                          print(myController.text);
                           var whatsapp = myController.text;
-                          var whatsappURl_android =
+                          var whatsappurlandroid =
                               "whatsapp://send?phone=" + whatsapp;
-                          await launch(whatsappURl_android);
+                          await launch(whatsappurlandroid);
                         },
-                        child: Text('Go to chat')),
-                    SizedBox(
+                        child: const Text('Go to chat')),
+                    const SizedBox(
                       height: 10,
                     )
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              Text('Made with ❤️ in Earth ⚡ Powered by coarde')
+              const Text('Made with ❤️ in Earth ⚡ Powered by coarde')
             ],
           ),
         ),
