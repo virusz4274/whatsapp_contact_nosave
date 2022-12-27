@@ -62,7 +62,7 @@ class _MainPageState extends State<MainPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Lottie.network(
-                  'https://assets7.lottiefiles.com/private_files/lf30_vfaddvqs.json',
+                  'https://assets4.lottiefiles.com/packages/lf20_p5yomfw6.json',
                   height: 200,
                   width: 200,
                   fit: BoxFit.fill),
