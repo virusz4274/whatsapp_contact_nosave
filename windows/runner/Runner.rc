@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "tech.virusz4274" "\0"
-            VALUE "FileDescription", "whatsapp_contact_nosave" "\0"
+            VALUE "FileDescription", "Click to Chat WA" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "whatsapp_contact_nosave" "\0"
+            VALUE "InternalName", "Click to Chat WA" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 tech.virusz4274. All rights reserved." "\0"
             VALUE "OriginalFilename", "whatsapp_contact_nosave.exe" "\0"
-            VALUE "ProductName", "whatsapp_contact_nosave" "\0"
+            VALUE "ProductName", "Click to Chat WA" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
