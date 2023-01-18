@@ -8,7 +8,7 @@
 PRODUCT_NAME = Click to Chat WA;
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = tech.virusz4274.ctcwa;
+PRODUCT_BUNDLE_IDENTIFIER = tech.virusz4274.whatsapp_contact_nosave;
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2022 tech.virusz4274. All rights reserved.
